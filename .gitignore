@@ -1,0 +1,52 @@
+# MacOS files
+.DS_Store
+
+# Node.js dependencies
+node_modules/
+
+# CodeIgniter cache and log files
+application/cache/*
+!application/cache/index.html
+application/logs/*
+!application/logs/index.html
+
+# Keep .htaccess files
+!application/*/.htaccess
+
+# Sensitive or environment-specific configuration files
+/application/config/database.php
+/application/config/email.php
+/application/config/encryption_key.php
+
+# Composer dependencies
+composer.lock
+/vendor/
+
+# Test-specific files
+tests/mocks/database/ci_test.sqlite
+/tests/tests/
+/tests/results/
+
+# CodeIgniter user guide and build directories
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+
+# IDE and system-specific files
+/nbproject/
+.idea/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Temporary files and backups
+*.swp
+*.swo
+*.bak
+*.tmp
+Thumbs.db
