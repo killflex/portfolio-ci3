@@ -13,38 +13,70 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body class="bg-base-100 text-base-content">
 
   <!-- Header Section -->
-  <header class="bg-base-200 shadow-lg">
-    <nav class="container mx-auto p-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Ferry Hasan</h1>
-      <ul class="flex space-x-4">
-        <li><a href="#hero" class="hover:text-primary">Home</a></li>
-        <li><a href="#about" class="hover:text-primary">About</a></li>
-        <li><a href="#projects" class="hover:text-primary">Projects</a></li>
-        <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+  <div class="navbar bg-base-100">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <a class="font-bold text-xl">Ferry Hasan</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+    <div class="navbar-end">
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </div>
 
   <!-- Hero Section -->
   <div class="hero bg-base-200 min-h-screen">
-  <div class="hero-content flex-col lg:flex-row-reverse">
-    <img
-      src="<?= base_url().'assets/img/ferry.jpg'?>"
-      class="mask mask-squircle w-[20rem]" />
-    <div>
-      <h1 class="text-5xl font-bold">Hi There!</h1>
-      <p class="py-6 pr-[15rem]">
-        I am Ferry Hasan, a web developer with experience in various fields such as front-end and back-end development. I enjoy solving problems through creative solutions and coding.
-      </p>
-      <button class="btn btn-primary">Get Started</button>
+    <div class="hero-content flex-col lg:flex-row-reverse lg:gap-20">
+      <img
+        src="<?= base_url().'assets/img/ferry.jpg'?>"
+        class="max-w-sm mask mask-squircle shadow-2xl" />
+      <div>
+        <div class=""></div>
+        <h1 class="text-5xl font-bold">Hi There!</h1>
+        <p class="py-6">
+          Full Stack Developer & Motion Graphic Designer based in Surabaya, Indonesia.
+        </p>
+        <button class="btn btn-primary">Get Started</button>
+      </div>
     </div>
   </div>
-</div>
 
   <!-- About Section -->
   <section id="about" class="container mx-auto p-10 text-center">
     <h3 class="text-4xl font-bold mb-6">About Me</h3>
-    <p class="text-lg">I am a [developer/designer/etc.] with experience in various fields such as [field1], [field2], and [field3]. I enjoy solving problems through creative solutions and coding.</p>
+    <p class="text-md lg:text-lg my-4">Welcome to my portfolio! I am Ferry Hasan, also known as killflex on social media. Currently, I am an undergraduate student of Computer Science at UPN "Veteran" Jawa Timur.</p>
+    <p class="text-md lg:text-lg my-4">At 20 years old, I have over 4 years of experience in digital media and web development. My expertise covers a broad spectrum, including front-end and back-end development, where I design and implement user-friendly and responsive websites. Additionally, I excel in video editing, bringing stories to life through meticulous cuts, color grading, and motion graphics. My proficiency in 3D art allows me to create immersive and realistic visual experiences, adding a unique dimension to my projects.</p>
+    <p class="text-md lg:text-lg my-4">Motion design and web development are more than just hobbies for me, they are my biggest passions. Explore my work and join me on this creative journey!</p>
   </section>
 
   <!-- Projects Section -->
@@ -101,10 +133,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <!-- Footer Section -->
   <footer class="footer footer-center bg-base-200 text-base-content rounded p-10">
   <nav class="grid grid-flow-col gap-4">
-    <a class="link link-hover">About us</a>
-    <a class="link link-hover">Contact</a>
-    <a class="link link-hover">Jobs</a>
-    <a class="link link-hover">Press kit</a>
+    <a href="#home" class="link link-hover">Home</a>
+    <a href="#about" class="link link-hover">About Me</a>
+    <a href="#projects" class="link link-hover">Projects</a>
+    <a href="#contact" class="link link-hover">Contact</a>
   </nav>
   <nav>
     <div class="grid grid-flow-col gap-4">
@@ -144,7 +176,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
   </nav>
   <aside>
-    <p>Copyright © 2024 - All right reserved by Ferry Hasan</p>
+    <p>Copyright © 2024 - All right reserved by <a href="https://www.github.com/killflex" class="underline">Ferry Hasan</a></p>
   </aside>
 </footer>
 
