@@ -29,4 +29,11 @@ class Home extends CI_Controller {
 	{
 		$this->load->view('index');
 	}
+
+	public function prosesData()
+	{
+		$data = $this->input->post();
+		// print_r($data);
+		$this->load->view('success', $data);
+	}
 }
