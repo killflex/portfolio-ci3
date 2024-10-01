@@ -42,7 +42,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </section>
 
   <!-- Contact Section -->
-  <form action="<?= base_url('index.php/home/prosesData'); ?>" method="post" class="w-full max-w-screen-xl mx-auto my-24">
+  <form action="<?= base_url('index.php/home/prosesData'); ?>" method="post" class="w-full max-w-screen-xl mx-auto my-24" id="contact">
     <div class="text-center">
       <h3 class="text-4xl font-bold mb-6">Contact</h3>
     </div>
