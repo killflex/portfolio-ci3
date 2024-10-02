@@ -1,5 +1,5 @@
 <!-- Header Section -->
-  <nav class="bg-white border-gray-200 dark:bg-gray-900">
+  <nav class="bg-white border-gray-200 dark:bg-gray-900 border-b-2">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="https://linktr.ee/killflex" class="flex items-center space-x-3 rtl:space-x-reverse" target="_blank">
           <img src="<?= base_url().'assets/img/favicon.png'?>" class="h-8" alt="killflex logo" />

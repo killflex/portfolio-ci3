@@ -16,11 +16,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <?php include 'application/views/components/header.php';?>
 
   <!-- Hero Section -->
-  <div class="flex flex-col items-center gap-10 lg:flex-row-reverse w-full max-w-screen-xl mx-auto my-24">
+  <div class="flex flex-col items-center gap-10 lg:flex-row-reverse w-full max-w-screen-xl mx-auto my-8 p-8">
     <div class="flex items-center justify-center">
-      <img src="assets/img/ferry.jpg" class="max-w-sm shadow-xl dark:shadow-gray-800 duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0" alt="Ferry Hasan" />
+      <img src="assets/img/ferry.jpg" class="max-w-xs shadow-xl dark:shadow-gray-800 rounded-xl" alt="Ferry Hasan" />
     </div>
-    <div class="text-left">
+    <div class="text-justify">
       <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Hi There!</h1>
       <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">My name is Ferry Hasan, known as killflex. I'm 21 years old Full Stack Developer & Motion Designer based in Surabaya, Indonesia.</p>
       <a href="#contact" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
