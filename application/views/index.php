@@ -16,7 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <?php include 'application/views/components/header.php';?>
 
   <!-- Hero Section -->
-  <div class="flex flex-col items-center gap-10 lg:flex-row-reverse w-full max-w-screen-xl mx-auto my-8 p-8">
+  <div class="flex flex-col items-center gap-10 lg:flex-row-reverse w-full max-w-screen-xl mx-auto my-2 p-8">
     <div class="flex items-center justify-center">
       <img src="assets/img/ferry.jpg" class="max-w-xs shadow-xl dark:shadow-gray-800 rounded-xl" alt="Ferry Hasan" />
     </div>
@@ -30,19 +30,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </svg>
       </a>
     </div>
-
   </div>
 
   <!-- About Section -->
-  <section id="about" class="w-full max-w-screen-xl mx-auto my-24 text-center">
+  <section id="about" class="w-full max-w-screen-xl mx-auto my-2 p-8 text-center">
     <h3 class="text-4xl font-bold mb-6">About Me</h3>
-    <p class="mb-3 text-gray-500 dark:text-gray-400">At 21 years old, I have over 4 years of experience in digital media and web development. My expertise covers a broad spectrum, including front-end and back-end development, where I design and implement user-friendly and responsive websites. Additionally, I excel in video editing, bringing stories to life through meticulous cuts, color grading, and motion graphics. My proficiency in 3D art allows me to create immersive and realistic visual experiences, adding a unique dimension to my projects.</p>
     <p class="mb-3 text-gray-500 dark:text-gray-400">It started with my passion for learning computer technology, website technology, watching 2D and 3D animation, and everything related to it. I had a strong desire to create my own. This motivated me to learn various programming languages and tools, until I finally mastered it.</p>
     <p class="text-gray-500 dark:text-gray-400">Motion design and web development are more than just hobbies for me, they are my biggest passions. Explore my work and join me on this creative journey!</p>
   </section>
 
   <!-- Contact Section -->
-  <form action="<?= base_url('index.php/home/prosesData'); ?>" method="post" class="w-full max-w-screen-xl mx-auto my-24" id="contact">
+  <form action="<?= base_url('index.php/home/prosesData'); ?>" method="post" class="w-full max-w-screen-xl mx-auto my-2 p-8" id="contact">
     <div class="text-center">
       <h3 class="text-4xl font-bold mb-6">Contact</h3>
     </div>
